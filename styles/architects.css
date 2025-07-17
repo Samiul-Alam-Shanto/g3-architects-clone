@@ -103,9 +103,6 @@ main>section{
     width: 100%;
 }
 
-
-
-
 /* team section styles */
 
 .teams{
@@ -141,10 +138,12 @@ main>section{
 
 
 /* Responsive Media Query */
-
+/* For Header  */
 @media screen and (max-width: 576px) {
     .navbar, .nav-links {
         flex-direction: column;
     }
+
+    /* For team section */
     
 }
