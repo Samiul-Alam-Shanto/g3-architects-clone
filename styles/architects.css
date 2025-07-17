@@ -3,18 +3,19 @@
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 /* shared Styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #FF900E;
     color: #FFFFFF;
     padding: 20px 25px;
@@ -26,15 +27,16 @@
 }
 
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-main>section{
+main>section {
     margin-top: 130px;
 }
-.section-title{
+
+.section-title {
     font-size: 3rem;
     font-weight: 700;
     color: #131313;
@@ -43,7 +45,7 @@ main>section{
 
 
 /* dark-01 */
-.text-black{
+.text-black {
     color: #131313;
 }
 
@@ -51,12 +53,13 @@ main>section{
 .text-gray {
     color: #424242;
 }
+
 /* dark-03 */
-.text-ltgray{
+.text-ltgray {
     color: #727272;
 }
 
-.bg-light{
+.bg-light {
     background-color: rgba(255, 144, 14, 0.10);
 }
 
@@ -64,86 +67,98 @@ main>section{
 
 /* navbar related styles */
 
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 
 }
-.brand{
+
+.brand {
     font-weight: 700;
     font-size: 3rem;
 }
-.nav-links{
+
+.nav-links {
     gap: 30px;
-    
+
 }
 
-.nav-items{
+.nav-items {
     list-style: none;
     font-size: 1.2rem;
 
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
 }
 
-.navbar , .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* banner related styles */
-.banner{
+.banner {
     padding-bottom: 60px;
 }
 
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
 }
-.banner-image{
+
+.banner-image {
     width: 100%;
 }
 
 /* team section styles */
 
-.teams{
+.teams {
     gap: 4.5rem;
     align-items: center;
     padding: 0px 60px;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.our-features{
+
+.our-features {
     max-width: 530px;
 }
 
 
-#quick-list{
+#quick-list {
     font-weight: 500;
 }
-#features{
+
+#features {
     color: #FF900E;
 }
+
 /* feature section styles */
-#feature-section-title{
+#feature-section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
     margin-top: 0px;
 }
-.features{
+
+.features {
     gap: 140px;
 }
-.feature-card{
+
+.feature-card {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 30px;
@@ -151,46 +166,49 @@ main>section{
 
 }
 
-.feature-title{
+.feature-title {
     font-size: 1.25rem;
     font-weight: 600;
     margin: 10px 0px;
 }
 
-#experience-badge{
+
+#experience-badge {
     padding: 45px 42px;
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 0px;
+    margin-top: -100px;
+    margin-left: -100px;
+
+
 }
-#experience-year{
+
+#experience-year {
     font-size: 4rem;
     font-weight: 700;
 }
 
-.features img{
-    width: 100%;
-}
+
 
 
 /* some facts related styles */
-.some-facts>h3{
+.some-facts>h3 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 24px;
 }
 
-.facts-container{
+.facts-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 100px 50px;
 }
 
-.fact-details{
+.fact-details {
     max-width: 540px;
 }
 
-.fact-card{
+.fact-card {
     border: 1px solid #FF900E;
     border-radius: 8px;
     width: 240px;
@@ -200,28 +218,32 @@ main>section{
     align-items: center;
 
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin: 10px 0px 5px 0px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 0px;
 }
 
 /* sponsors related styles */
-    .sponsor-info{
-        max-width: 540px;
-        margin: 50px auto;
-        text-align: center;
-    }
-.sponsor-companies{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+.sponsor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
 }
-.sponsor-companies img{
+
+.sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-companies img {
     filter: grayscale(100%);
 }
 
@@ -231,46 +253,79 @@ main>section{
 /* Responsive Media Query */
 /* For smaller device  */
 @media screen and (max-width: 576px) {
-    .navbar, 
-    .nav-links, 
+
+    .navbar,
+    .nav-links,
     .features,
-    .teams{
+    .teams {
         flex-direction: column;
     }
 
-    .team-img-container, .facts-container, .sponsor-companies{
+    .team-img-container,
+    .facts-container,
+    .sponsor-companies {
         grid-template-columns: 1fr;
     }
-    .facts-container, .sponsor-companies{
+
+    .facts-container,
+    .sponsor-companies {
         justify-items: center;
         gap: 24px;
     }
-    #experience-badge{
-        margin: 20px 0px 0px 20px;
+
+
+    #experience-badge {
+        margin: 20px 10px 0px 10px;
     }
-    /* .features{
-        gap: 50px;
+
+    .features img {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .features{
+        gap: 30px;
         justify-content: center;
-    } */
-    
+    }
+
 
 }
+
 /* for medium screen devices */
 @media screen and (min-width:576px) and (max-width:992px) {
-    
-    .teams{
+
+    .teams,
+    .features {
         flex-direction: column;
     }
-    
-    .team-img-container img{
+
+    .team-img-container img {
         width: 100%;
     }
-    .facts-container, .sponsor-companies{
-        grid-template-columns: repeat(2,1fr);
+
+    .facts-container,
+    .sponsor-companies {
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 24px;
     }
-    #figma{
+
+    #figma {
         grid-column: span 2;
     }
+
+    .features img {
+        width: 100%;
+       
+    }
+     .features{
+        gap: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+    #experience-badge {
+        margin: -110px 10px 0px 10px;
+    }
+
+
 }
